@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Button from '@material-ui/core/Button';
+// import logo from './logo.svg';
 import './App.css';
+
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <div className>
+              <Button variant="contained">Default</Button>
+              <Button variant="contained" color="primary">
+                  Primary
+              </Button>
+              <Button variant="contained" color="secondary">
+                  Secondary
+              </Button>
+              <Button variant="contained" disabled>
+                  Disabled
+              </Button>
+              <Button variant="contained" color="primary" href="#contained-buttons">
+                  Link
+              </Button>
+          </div>
       </div>
     );
   }
