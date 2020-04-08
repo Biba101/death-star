@@ -23,6 +23,7 @@ class AuthForm extends Component {
                         />
                         <TextField
                             id="standard-full-width"
+                            type="password"
                             label="Пароль"
                             style={{ margin: 8 }}
                             placeholder="Введите пароль"
